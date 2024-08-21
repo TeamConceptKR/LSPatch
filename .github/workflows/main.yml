@@ -52,7 +52,7 @@ jobs:
     - name: Setup Java
       uses: actions/setup-java@v3
       with:
-        java-version: '21'
+        java-version: '17'
         distribution: 'temurin'
 
     - name: Setup Gradle
@@ -84,7 +84,7 @@ jobs:
         echo 'org.gradle.parallel=true' >> gradle.properties
         echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
         echo 'android.native.buildOutput=verbose' >> gradle.properties
-        ./gradlew buildAll --warning-mode all
+        ./gradlew buildAll --warning-mode all -Xlint:deprecation --scan
 
     - name: Upload Debug artifact
       uses: actions/upload-artifact@v3
