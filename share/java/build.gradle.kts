@@ -3,8 +3,8 @@ val verCode: Int by rootProject.extra
 val verName: String by rootProject.extra
 val coreVerCode: Int by rootProject.extra
 val coreVerName: String by rootProject.extra
-val androidSourceCompatibility: JavaVersion by rootProject.extra
-val androidTargetCompatibility: JavaVersion by rootProject.extra
+val androidSourceCompatibility: JavaVersion.VERSION_17
+val androidTargetCompatibility: JavaVersion.VERSION_17
 
 plugins {
     id("java-library")
