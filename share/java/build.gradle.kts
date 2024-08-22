@@ -11,8 +11,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = androidSourceCompatibility
-    targetCompatibility = androidTargetCompatibility
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 val generateTask = task<Copy>("generateJava") {

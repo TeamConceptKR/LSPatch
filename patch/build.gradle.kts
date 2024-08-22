@@ -6,8 +6,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = androidSourceCompatibility
-    targetCompatibility = androidTargetCompatibility
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
     sourceSets {
         main {
             java.srcDirs("libs/manifest-editor/lib/src/main/java")

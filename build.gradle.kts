@@ -130,8 +130,8 @@ fun Project.configureBaseExtension() {
         }
 
         compileOptions {
-            targetCompatibility(androidTargetCompatibility)
-            sourceCompatibility(androidSourceCompatibility)
+            targetCompatibility(17)
+            sourceCompatibility(17)
         }
 
         buildTypes {
